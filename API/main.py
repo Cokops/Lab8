@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from controller_api import router as tasks_router
+import uvicorn
 
 app = FastAPI(
     title="ToDo API",
@@ -10,5 +11,4 @@ app = FastAPI(
 app.include_router(tasks_router)
 
 if __name__ == "__main__":
-    import uvicorn
     uvicorn.run("main:app", reload=True)
