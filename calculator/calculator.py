@@ -1,18 +1,9 @@
-"""
-САМЫЙ ПРОСТОЙ TDD КАЛЬКУЛЯТОР
-Делаем по шагам:
-1. Пишем тест
-2. Запускаем - он падает (красный)
-3. Пишем код
-4. Запускаем - проходит (зеленый)
-5. Повторяем
-"""
-
 def test_add():
 
     result = add(2, 3)
     assert result == 5, f"Ошибка: 2+3 должно быть 5, а получилось {result}"
     print("✓test_add прошел!")
+
 
 def test_multiply():
     result = multiply(4, 5)
@@ -22,6 +13,7 @@ def test_multiply():
 
 def add(a, b):
     return a + b  
+
 
 def multiply(a, b):
     return a * b  
